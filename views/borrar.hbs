@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row mt-4">
+    
+        <div class="col-12 mt-4">
+            <table class="table text-center">
+                <thead>
+                    
+                    <th>ID</th>
+                    <th>Nombre</th>
+                
+                </thead>
+
+                <tbody>
+                    {{#each nombres_array}}
+                    <tr>
+                        <td>{{id}}</td>
+                        <td>{{nombre}}</td>
+                        
+                       
+                        {{!-- delete, update -> where  --}}
+                        <td>
+                            <a href="/borrar/eliminar/{{id}}">
+                               eliminar
+                            </a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
